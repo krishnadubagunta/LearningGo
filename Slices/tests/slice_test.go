@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func TestSlicesCompositeLiterals (t *testing.T) {
-	want := []int{1,2,3,4,5}
+func TestSlicesCompositeLiterals(t *testing.T) {
+	want := []int{1, 2, 3, 4, 5}
 	got := Slices.ValuesOfSameType()
 	for i, wantV := range want {
 		if wantV != got[i] {
@@ -15,8 +15,8 @@ func TestSlicesCompositeLiterals (t *testing.T) {
 	}
 }
 
-func TestSlicingASlice (t *testing.T) {
-	want := []int{4,5,7,8,42}
+func TestSlicingASlice(t *testing.T) {
+	want := []int{4, 5, 7, 8, 42}
 	for i := 0; i < 5; i++ {
 		wantI := want[i:]
 		gotI := Slices.SlicingASlice(i, want)
@@ -27,4 +27,3 @@ func TestSlicingASlice (t *testing.T) {
 		}
 	}
 }
-
