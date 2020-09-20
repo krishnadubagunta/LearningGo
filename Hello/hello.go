@@ -1,6 +1,8 @@
-package hello
+package Hello
 
-import "rsc.io/quote"
+import (
+	"rsc.io/quote"
+)
 
 func Hello() string {
 	return quote.Hello()
